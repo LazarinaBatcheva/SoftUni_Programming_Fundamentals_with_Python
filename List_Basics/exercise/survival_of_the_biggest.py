@@ -1,10 +1,10 @@
-list_of_integer = input().split()
+list_of_integers = input().split()
 count_of_numbers_to_remove = int(input())
 
 remaining_numbers = []
 numbers_counter = 0
 
-for element in list_of_integer:
+for element in list_of_integers:
     current_number = int(element)
     remaining_numbers.append(current_number)
 
@@ -13,7 +13,7 @@ while numbers_counter < count_of_numbers_to_remove:
     remaining_numbers.remove(min_number)
     numbers_counter += 1
 
-list_of_integer = remaining_numbers
+list_of_integers = remaining_numbers
 
 remaining_numbers_as_strings = []
 
