@@ -10,3 +10,10 @@ def rounded_number(numbers):
 
 
 print(rounded_number(sequence_of_numbers))
+
+
+# sequence_of_numbers = input().split()
+
+# rounded_numbers = [round(float(number),) for number in sequence_of_numbers]
+
+# print(rounded_numbers)
