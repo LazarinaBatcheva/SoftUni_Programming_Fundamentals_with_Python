@@ -8,6 +8,7 @@ while command != "end":
     first_index = new_command[0]
     second_index = new_command[1]
     number_of_moves += 1
+    
     # check if player try to cheat
     if first_index == second_index or \
             first_index < 0 or first_index > len(elements) - 1 or\
