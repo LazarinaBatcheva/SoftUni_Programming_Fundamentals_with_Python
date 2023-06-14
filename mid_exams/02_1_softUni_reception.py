@@ -2,13 +2,14 @@ first_employee, second_employee, third_employee = int(input()), int(input()), in
 students = int(input())
 
 answers_per_hour = first_employee + second_employee + third_employee
+hours_counter = 0
 time_needed = 0
 
 while students > 0:
-    if students > 0:
-        time_needed += 1
-        if time_needed % 4 == 0:
-            time_needed += 1
+    hours_counter += 1
+    time_needed += 1
+    if hours_counter % 4 == 0:
+        continue
     students -= answers_per_hour
 
 print(f"Time needed: {time_needed}h.")
