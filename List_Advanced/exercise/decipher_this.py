@@ -13,7 +13,7 @@ def deciphered_message(some_message):
         current_letter = [let for let in letter]
         current_letter[0], current_letter[-1] = current_letter[-1], current_letter[0]
         words.append(current_letter)
-        return first_letter + "".join(current_letter)
+    return first_letter + "".join(current_letter)
 
 
 message = input().split()
