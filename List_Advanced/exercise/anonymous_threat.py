@@ -33,10 +33,10 @@ while command != "3:1":
     command = command.split()
     action, start_index, end_index = command[0], int(command[1]), int(command[2])
 
-    if command[0] == "merge":
+    if action == "merge":
         merge(some_strings, start_index, end_index)
 
-    elif command[0] == "divide":
+    elif action == "divide":
         divide(some_strings, start_index, end_index)
 
     command = input()
