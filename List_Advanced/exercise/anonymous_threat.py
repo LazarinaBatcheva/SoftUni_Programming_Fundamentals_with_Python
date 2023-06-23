@@ -9,7 +9,7 @@ def merge(strings_list, start_i, end_i):
         new_word += element
         strings_list.remove(element)
     strings_list.insert(start_i, new_word)
-    return "".join(strings_list)
+    return strings_list
 
 
 def divide(strings_list, index, partition):
