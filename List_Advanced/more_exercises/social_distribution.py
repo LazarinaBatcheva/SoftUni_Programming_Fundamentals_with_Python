@@ -13,8 +13,7 @@ def distribution_of_wealth(people, minimum_wealth):
             people.pop(the_richest_index)
         if the_richest < minimum_wealth:
             return "No equal distribution possible"
-    else:
-        return people
+    return people
 
 
 population = [int(number) for number in input().split(", ")]
