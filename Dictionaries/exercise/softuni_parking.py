@@ -10,7 +10,7 @@ for user in range(number_of_registrants):
             print(f"{username} registered {users[username]} successfully")
         else:
             print(f"ERROR: already registered with plate number {users[username]}")
-    else:
+    elif "unregister" in command:
         action, username = command[0], command[1]
         if username not in users.keys():
             print(f"ERROR: user {username} not found")
