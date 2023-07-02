@@ -11,7 +11,7 @@ while command != "End":
 
     command = input()
 
-for company_name, employee_id in company_info.items():
+for company_name, employees in company_info.items():
     print(company_name)
-    for employee in employee_id:
+    for employee in employees:
         print(f"-- {employee}")
