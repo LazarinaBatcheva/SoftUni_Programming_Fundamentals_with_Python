@@ -1,7 +1,7 @@
 import re
 
 command = input()
-pattern = r"\>>([A-Za-z]+)<<([\d]+[\.[0-9]*)!(\d+)\b"
+pattern = r"\>>([A-Za-z]+)<<(\d+\.?\d*)!(\d+)\b"
 total_money = 0
 bought_furniture = []
 
