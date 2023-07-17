@@ -27,7 +27,7 @@ def change_key(a_piece, the_new_key, pieces_info_dict):
 
 number_of_pieces = int(input())
 
-pieces_info = {}
+pieces_info = dict()
 for current_piece in range(number_of_pieces):
     piece, composer, piece_key = input().split("|")
     if piece not in pieces_info.keys():
