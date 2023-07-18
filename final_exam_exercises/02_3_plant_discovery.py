@@ -23,7 +23,7 @@ def result():
     print("Plants for the exhibition:")
     for plant in plants_info:
         average_rating = 0
-        if sum(plants_info[plant][1]) != 0:
+        if sum(plants_info[plant][1]) > 0:
             average_rating = sum(plants_info[plant][1]) / len(plants_info[plant][1])
         print(f"- {plant}; Rarity: {plants_info[plant][0]}; Rating: {average_rating:.2f}")
 
