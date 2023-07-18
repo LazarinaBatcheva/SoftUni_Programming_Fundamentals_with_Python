@@ -40,11 +40,11 @@ while True:
         break
     command = command.split("|")
     if "Add" in command:
-        action, current_piece, current_composer, current_key = command[0], command[1], command[2], command[3]
+        current_piece, current_composer, current_key = command[1], command[2], command[3]
         add_piece(current_piece, current_composer, current_key, pieces_info)
     elif "Remove" in command:
-        action, current_piece = command[0], command[1]
+        current_piece = command[1]
         remove_piece(current_piece, pieces_info)
     elif "ChangeKey" in command:
-        action, current_piece, new_key = command[0], command[1], command[2]
+        current_piece, new_key = command[1], command[2]
         change_key(current_piece, new_key, pieces_info)
