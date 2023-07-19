@@ -6,8 +6,8 @@ total_calories = 0
 days = 0
 food_info_list = list()
 pattern = re.compile(r"([|#])(?P<food_name>[A-Za-z\s]+)\1"
-                     r"(?P<date>\d{2}/\d{2}/\d{2})\1"
-                     r"(?P<calories>[\d]+)\1")
+                     r"(?P<date>\d{2}/\d{2}/\d{2})"
+                     r"\1(?P<calories>[\d]+)\1")
 match = re.finditer(pattern, text_string)
 for food_info in match:
     total_calories += int(food_info["calories"])
