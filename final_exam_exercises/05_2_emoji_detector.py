@@ -11,8 +11,8 @@ def found_cool_threshold(text_string):
 
 
 def found_emojis(text_string, cool_threshold_sum):
-    pattern = re.compile(r"(:{2})(?P<emoji1>[A-Z][a-z]{2,})(::)|"
-                         r"(\*\*)(?P<emoji2>[A-Z][a-z]{2,})(\*{2})")
+    pattern = re.compile(r"(:{2})(?P<emoji1>[A-Z][a-z]{2,})(:{2})|"
+                         r"(\*{2})(?P<emoji2>[A-Z][a-z]{2,})(\*{2})")
     emojis = list(re.finditer(pattern, text_string))
     print(f"{len(emojis)} emojis found in the text. The cool ones are:")
     for emoji in emojis:
