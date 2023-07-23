@@ -35,5 +35,5 @@ for planet in sorted(attacked_planets):
     print(f"-> {planet}")
 
 print(f"Destroyed planets: {len(destroyed_planets)}")
-for planet in destroyed_planets:
+for planet in sorted(destroyed_planets):
     print(f"-> {planet}")
