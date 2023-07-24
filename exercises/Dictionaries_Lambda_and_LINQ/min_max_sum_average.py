@@ -5,6 +5,8 @@ print(f"Min = {min(numbers_list)}")
 print(f"Max = {max(numbers_list)}")
 print(f"Average = {sum(numbers_list) / len(numbers_list)}")
 
+
+
 # number_of_lines = int(input())
 # numbers_list = []
 # for number in range(number_of_lines):
