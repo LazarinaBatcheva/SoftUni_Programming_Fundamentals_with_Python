@@ -14,8 +14,8 @@ def calculated_right_part(right):
     middle_index = len(right) // 2
     right_part = right[middle_index:][::-1]
     left_part = right[:middle_index]
-    for index in range(len(right_part)):
-        right_part_result = right_part[index] + left_part[index]
+    for index in range(len(left_part)):
+        right_part_result = left_part[index] + right_part[index]
         right_part_list.append(right_part_result)
     return right_part_list
 
