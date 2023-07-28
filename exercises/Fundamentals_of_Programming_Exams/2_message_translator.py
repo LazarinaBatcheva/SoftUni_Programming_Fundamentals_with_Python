@@ -13,6 +13,5 @@ for _ in range(number_of_messages):
             for letter in current_message:
                 print(ord(letter), end=" ")
             print()
-
     else:
         print("The message is invalid")
